@@ -1,4 +1,7 @@
 from ultralytics import YOLO
+import os
+
+os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'
 
 # Load a model
 model = YOLO('yolov8n-pose.yaml')  # build a new model from YAML
